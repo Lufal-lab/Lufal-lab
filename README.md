@@ -53,11 +53,13 @@ I am a **Junior Software Engineer** graduated from the **AvanzaTech (MachEight)*
   <a href="mailto:lufalvarezvilla@gmail.com"><img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
 </p>
 
-## 📈 GitHub Stats
+<!--## 📈 GitHub Stats
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Lufal-lab&show_icons=true&theme=radical" alt="Lufal-lab">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lufal-lab&layout=compact&theme=radical" alt="Lufal-lab">
+  <img width="90%" src="https://github-stats-alpha.vercel.app/api?username=Lufal-lab&cc=000&tc=fff&ic=fff&bc=000" alt="Lufal-lab Stats" />
 </p>
+<p align="center">
+  <img width="90%" src="https://github-stats-alpha.vercel.app/api/top-langs?username=Lufal-lab&cc=000&tc=fff&ic=fff&bc=000" alt="Lufal-lab Languages" />
+</p> -->
 
 <!--
 **Lufal-lab/Lufal-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
