@@ -56,12 +56,11 @@ I am a **Junior Software Engineer** graduated from the **AvanzaTech (MachEight)*
 ## ⚙️ &nbsp;GitHub Analytics
 
 <p align="center">
-<a href="https://github.com/ArisGuimera">
+<a href="https://github.com/Lufal-lab">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Lufal-lab&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Lufal-lab&layout=compact&langs_count=8&theme=algolia"/>
 </a>
 </p>
-
 <!--## 📈 GitHub Stats
 <p align="center">
   <img width="90%" src="https://github-stats-alpha.vercel.app/api?username=Lufal-lab&cc=000&tc=fff&ic=fff&bc=000" alt="Lufal-lab Stats" />
