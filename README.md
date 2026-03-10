@@ -53,6 +53,15 @@ I am a **Junior Software Engineer** graduated from the **AvanzaTech (MachEight)*
   <a href="mailto:lufalvarezvilla@gmail.com"><img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
 </p>
 
+## ⚙️ &nbsp;GitHub Analytics
+
+<p align="center">
+<a href="https://github.com/ArisGuimera">
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Lufal-lab&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Lufal-lab&layout=compact&langs_count=8&theme=algolia"/>
+</a>
+</p>
+
 <!--## 📈 GitHub Stats
 <p align="center">
   <img width="90%" src="https://github-stats-alpha.vercel.app/api?username=Lufal-lab&cc=000&tc=fff&ic=fff&bc=000" alt="Lufal-lab Stats" />
