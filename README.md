@@ -18,7 +18,7 @@
 <hr>
 
 ### 🚀 About Me
-I am a **Software Engineer** graduated from the **AvanzaTech (MachEight)** program and a **Physics Engineer**. I bridge the gap between complex physical systems and scalable digital products, combining analytical rigor with modern software development.
+I am a **Software Engineer** graduated from the **AvanzaTech (MachEight)** program and a **Engineering Physicist**. I bridge the gap between complex physical systems and scalable digital products, combining analytical rigor with modern software development.
 
 - 🔭 **Currently focused on:** Building robust APIs with Django and dynamic interfaces with Angular.
 - 📊 **Expertise in:** Data cleaning, ETL pipelines, and mathematical modeling.
