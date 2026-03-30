@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/Lufal-lab">
-    <img src="https://readme-typing-svg.herokuapp.com?lines=Junior+Software+Engineer;Physics+Engineer;Full+Stack+Developer;Data+Analyst;Always+learning+new+things&center=true&width=380&height=45">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=Software+Engineer;Physics+Engineer;Full+Stack+Developer;Data+Analyst;Always+learning+new+things&center=true&width=380&height=45">
   </a>
 </p>
 
