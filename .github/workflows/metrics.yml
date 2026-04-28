@@ -8,27 +8,23 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Esto le da permiso explícito para guardar archivos
+      contents: write
     steps:
-      # Usamos v4 (la más moderna) para evitar avisos de Node.js
       - uses: actions/checkout@v4
 
-      # Genera la tarjeta de Estadísticas
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: stats.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, repositories
-          config_display: columns
-          config_timezone: America/Bogota
-
-      # Genera la tarjeta de Lenguajes
+      # Genera SOLO la tarjeta de Lenguajes
       - uses: lowlighter/metrics@latest
         with:
           filename: languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: "" # Esto apaga todo lo demás (commits, estrellas, etc.)
+          
+          # Configuración de lenguajes
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
+          
+          # AQUÍ CAMBIAMOS EL TÍTULO
+          # Usamos un alias para renombrar la sección
+          plugin_languages_title: My Programming Languages
