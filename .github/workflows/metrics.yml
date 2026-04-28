@@ -2,7 +2,7 @@ name: Metrics
 on:
   schedule: [{cron: "0 0 * * *"}] # Se actualiza cada noche
   workflow_dispatch: # Permite actualizarlo manualmente
-push: {branches: ["main"]}
+  push: {branches: ["main"]}
 
 jobs:
   github-metrics:
