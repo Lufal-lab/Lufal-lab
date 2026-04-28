@@ -53,17 +53,8 @@ I am a **Software Engineer** graduated from the **AvanzaTech (MachEight)** progr
   <a href="mailto:lufalvarezvilla@gmail.com"><img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
 </p>
 
-
-[<p align="center">
-<a href="https://github.com/Lufal-lab">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Lufal-lab&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Lufal-lab&layout=compact&langs_count=8&theme=algolia"/>
-</a>
-</p>
-
 ## ⚙️ &nbsp;GitHub Analytics
 <p align="center">
-  <img height="180em" src="stats.svg" />
   <img height="180em" src="languages.svg" />
 </p>
 
