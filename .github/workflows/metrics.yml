@@ -9,37 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       # Genera la tarjeta de Estadísticas (Izquierda)
-      - uses: vn7n24fzkq/github-readme-stats-github-action@v1.0.0
+      - uses: lowlighter/metrics@latest
         with:
-          output_filename: stats.svg
-          username: Lufal-lab
-          show_icons: true
-          theme: algolia
-          count_private: true
-          include_all_commits: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          filename: stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, activity, community, repositories
+          config_timezone: America/Bogota
+          # Esto hace que se vea como una tarjeta compacta
+          config_display: columns
 
       # Genera la tarjeta de Lenguajes (Derecha)
-      - uses: vn7n24fzkq/github-readme-stats-github-action@v1.0.0
+      - uses: lowlighter/metrics@latest
         with:
-          output_filename: languages.svg
-          layout: compact
-          username: Lufal-lab
-          theme: algolia
-          count_private: true
-          # Aquí pedimos que sea la versión de lenguajes
-          query_path: /api/top-langs
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-
-      # Guarda las imágenes en tu repositorio
-      - name: Commit de imágenes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg languages.svg
-          git commit -m "Actualización de estadísticas estáticas" || exit 0
-          git push
+          filename: languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
