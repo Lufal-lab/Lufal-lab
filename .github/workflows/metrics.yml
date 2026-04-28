@@ -7,20 +7,22 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Esto le da permiso explícito para guardar archivos
     steps:
-      - uses: actions/checkout@v3
+      # Usamos v4 (la más moderna) para evitar avisos de Node.js
+      - uses: actions/checkout@v4
 
-      # Genera la tarjeta de Estadísticas (Izquierda)
+      # Genera la tarjeta de Estadísticas
       - uses: lowlighter/metrics@latest
         with:
           filename: stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories
-          config_timezone: America/Bogota
-          # Esto hace que se vea como una tarjeta compacta
+          base: header, activity, repositories
           config_display: columns
+          config_timezone: America/Bogota
 
-      # Genera la tarjeta de Lenguajes (Derecha)
+      # Genera la tarjeta de Lenguajes
       - uses: lowlighter/metrics@latest
         with:
           filename: languages.svg
