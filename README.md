@@ -54,13 +54,26 @@ I am a **Software Engineer** graduated from the **AvanzaTech (MachEight)** progr
 </p>
 
 ## ⚙️ &nbsp;GitHub Analytics
-
 <p align="center">
+  <img height="180em" src="stats.svg" />
+  <img height="180em" src="languages.svg" />
+</p>
+
+<!-- >
+[<p align="center">
 <a href="https://github.com/Lufal-lab">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Lufal-lab&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Lufal-lab&layout=compact&langs_count=8&theme=algolia"/>
 </a>
 </p>
+
+<p align="center">
+  <img src="github-metrics.svg" alt="Mis estadísticas de C++, Python y más" />
+</p>](url)
+
+
+
+
 <!--## 📈 GitHub Stats
 <p align="center">
   <img width="90%" src="https://github-stats-alpha.vercel.app/api?username=Lufal-lab&cc=000&tc=fff&ic=fff&bc=000" alt="Lufal-lab Stats" />
