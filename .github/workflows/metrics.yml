@@ -1,37 +1,45 @@
-name: Metrics
+name: GitHub Stats Estático
 on:
-  schedule: [{cron: "0 0 * * *"}] # Se actualiza cada noche
-  workflow_dispatch: # Permite actualizarlo manualmente
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
   push: {branches: ["main"]}
 
 jobs:
-  github-metrics:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v3
+      
+      # Genera la tarjeta de Estadísticas (Izquierda)
+      - uses: vn7n24fzkq/github-readme-stats-github-action@v1.0.0
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Lufal-lab
-          template: classic
-          
-          # Esto quita el encabezado con tu nombre y foto para que sea más limpio
-          config_display: columns
-          base: metadata
-          base_hierarchical: yes
-          
-          # Configuramos la parte de Estadísticas (Izquierda)
-          # Solo dejamos commits y repositorios para evitar los "0" en stars e issues
-          base_common: yes
-          base_header: no
-          
-          # Configuramos Lenguajes (Derecha)
-          plugin_languages: yes
-          plugin_languages_details: percentage
-          plugin_languages_sections: most-used
-          plugin_languages_limit: 6
-          
-          # Ajustes visuales para que se parezca a tu imagen
-          config_animations: yes
-          config_timezone: America/Bogota
+          output_filename: stats.svg
+          username: Lufal-lab
+          show_icons: true
+          theme: algolia
+          count_private: true
+          include_all_commits: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+      # Genera la tarjeta de Lenguajes (Derecha)
+      - uses: vn7n24fzkq/github-readme-stats-github-action@v1.0.0
+        with:
+          output_filename: languages.svg
+          layout: compact
+          username: Lufal-lab
+          theme: algolia
+          count_private: true
+          # Aquí pedimos que sea la versión de lenguajes
+          query_path: /api/top-langs
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+      # Guarda las imágenes en tu repositorio
+      - name: Commit de imágenes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.svg languages.svg
+          git commit -m "Actualización de estadísticas estáticas" || exit 0
+          git push
